@@ -7,6 +7,7 @@ function FilterProduct() {
     const womensClothing = ProductData.filter(product => product.category === "women's clothing");
     const electronics = ProductData.filter(product => product.category === "electronics");
     const jewelery = ProductData.filter(product => product.category === "jewelery");
+    
   const renderCard = (product) => (
 
     <li key={product.id}>
