@@ -19,8 +19,8 @@ function ProductCarousel() {
 
   return (
     <div className="container mt-5 text-center">
+      <h1 className='text-center bg-info-subtle mb-5'>Product Carousel</h1>
       <div className="d-flex justify-content-center align-items-center">
-
         <button onClick={handlePrevious} className="btn btn-primary mx-2">
           Previous
         </button>
