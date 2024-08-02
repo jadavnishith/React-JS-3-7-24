@@ -12,10 +12,12 @@ function Form() {
       pincode:'',
     })
 
-    // function handleForm(e) {
-    //   setFormData(e.target.value)
-    // }
-
+    // handleFirstName ye function firstname input ke liye onchange event ko haldle krta hai 
+    // e.target.name => field ka name dynamic li access krta hai 
+    // e.target.value => uski value ko update krne ke liye 
+    // 'name' attribute ko  input field mein specify karte hain. Yeh attribute object key ke taur par use hota hai.
+    // ...pre syntax se pehle ka state object copy hota hai, aur sirf wahi key update hoti hai jisse input field map hoti hai.
+    
     function handleFirstName(e){
       const {name,value} = e.target
         setFormData(pre => ({
@@ -23,11 +25,6 @@ function Form() {
           [name]:value
         }))
     }
-    // handleFirstName ye function firstname input ke liye onchange event ko haldle krta hai 
-    // e.target.name => field ka name dynamic li access krta hai 
-    // e.target.value => uski value ko update krne ke liye 
-    // 'name' attribute ko  input field mein specify karte hain. Yeh attribute object key ke taur par use hota hai.
-    // ...pre syntax se pehle ka state object copy hota hai, aur sirf wahi key update hoti hai jisse input field map hoti hai.
 
     function handleLastName(e){
       const {name,value} = e.target
