@@ -32,6 +32,7 @@ function ProductDataApi() {
       <div className="container mt-3 text-center py-3 text-bg-dark">
         <h1 className="py-2">Product's</h1>
         {/* bootstrap card */}
+
 {userData &&
         <div
           className="card mt-3"
@@ -70,6 +71,7 @@ function ProductDataApi() {
             </a>
           </div>
         </div>
+        
       }
 
         {/* button previous */}
