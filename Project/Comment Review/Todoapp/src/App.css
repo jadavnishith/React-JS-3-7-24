@@ -1,0 +1,123 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.todo-container {
+  width: 100%;
+}
+
+.app-title {
+  font-size: 3rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.task-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.task-input {
+  flex-grow: 1;
+  padding: 15px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  font-size: 1.25rem;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.task-input:focus {
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
+}
+
+.submit-btn {
+  padding: 15px 25px;
+  margin-left: 10px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn.update-btn {
+  background-color: #f0ad4e;
+}
+
+.submit-btn:hover {
+  background-color: #4cae4c;
+  transform: translateY(-2px);
+}
+
+.update-btn:hover {
+  background-color: #ec971f;
+}
+
+.task-list {
+  margin-top: 30px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.todo-item:hover {
+  background-color: #e9ecef;
+  transform: scale(1.03);
+}
+
+.task-text {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.action-buttons {
+  display: flex;
+}
+
+.edit-btn, .delete-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.edit-btn:hover {
+  color: #007bff;
+}
+
+.delete-btn:hover {
+  color: #dc3545;
+}
