@@ -1,0 +1,14 @@
+li, a{
+    text-decoration: none !important;
+    list-style: none !important
+}
+.crimson:hover{
+    color:cadetblue !important;
+}
+.crimson{
+    color:cadetblue !important;
+}
+.hover:hover{
+    color:cadetblue ;
+
+}
