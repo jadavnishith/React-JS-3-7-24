@@ -1,0 +1,22 @@
+{
+  "api": [
+    {
+      "name": "Manav",
+      "email": "Manav@gmail.com",
+      "password": "1802",
+      "id": 1
+    },
+    {
+      "name": "nick",
+      "email": "nick@gmail.com",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "name": "mr",
+      "email": "mr@gmail.com",
+      "password": "123",
+      "id": 3
+    }
+  ]
+}
