@@ -3,26 +3,48 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 function Login({ setUser }) {
+    //  Isme setUser prop diya hai jo user ki state ko update karne ke liye hai.
+
   const [email, setEmail] = useState('');
+    // email: User ka email store karne ke liye.
+    // setEmail: email state ko update karne ke liye
+
   const [password, setPassword] = useState('');
+    // password: User ka password store karne ke liye.
+    // setPassword: password state ko update karne ke liye 
+
   const [message, setMessage] = useState('');
+    // message: Login ke baad feedback dene ke liye (successful ya error messages).
+    // setMessage: message state ko update karne ke liye
   
   const navigate = useNavigate();
 
   function handleSubmit(e) {
+
     e.preventDefault();
 
     axios.get('http://localhost:4040/api')
+    // axios.get() user data ko fetch karne ke liye GET request bhejti hai.
+
       .then((response) => {
+        // .then((response) => {...}): Yeh block tab chalega jab request successful hogi
+
         const users = response.data;
+        // const users = response.data; : Yeh line API se milne wale users ko store karegi.
+
         const user = users.find(user => user.email === email && user.password === password);
+        // const user = users.find(...): Yeh line users array mein se us user ko dhundhegi jiska email aur password match karte hain.
         
-        if (user) {
-          setUser(user);
-          setMessage("Login Successful!");
-          navigate('/');
-        } else {
-          alert("Please SignUP First");
+        if (user) { // agr user milta hai 
+
+          setUser(user); // tab setUser(user) ko update krdo
+          setMessage("Login Successful!"); // or success msg bhejdo 
+          navigate('/'); // or user ko home page pr redirect krdo
+
+        } else { // agr user nahi milta
+
+          alert("Please SignUP First"); 
+
         }
       })
       .catch((error) => {

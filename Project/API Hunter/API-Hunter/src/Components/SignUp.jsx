@@ -3,14 +3,31 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function SignUp() {
+
   const [data, setData] = useState({ name: "", email: "", password: "" });
+  // data: Ye ek state variable hai jo ek object hai, jisme user ka name, email, aur password store kiya hai.
+  // setData: Yeh function hai jo data state ko update karne ke liye use kiya hai.
+  // useState: Iska initial value ek object hai jisme sabhi fields empty rakhe hain, taaki jab user input kare tab inhe update kiya ja sake.
+
   const navigate = useNavigate();
+  // navigate: Ye ek function hai jo router ke beech navigate karega
 
   function handleSubmit(e) {
+    // handleSubmit: Ye function form ke submit hone par call hoga
+
     e.preventDefault();
-    axios.post(`http://localhost:4040/api`, data).then((res) => {
+    // e.preventDefault(): Yeh line default form submission ko rokegi or page reload nahi hoga.
+
+    axios.post(`http://localhost:4040/api`, data)
+    // axios.post(...): Ye line POST request send karti hai http://localhost:4040/api URL par,
+    // aur data ko request body mein bhejti hai. Yeh data object user ke input values hai.
+
+    .then((res) => {
+      // .then((res) => {...}): Ye block tab chalega jab request successful hogi
       console.log(res.data);
       navigate("/login");
+      // navigate("/login"): Yeh line user ko /login route par redirect kregi,
+      // sign-up hone ke baad user login page par chala jayega.
     });
   }
 
@@ -36,6 +53,11 @@ function SignUp() {
             placeholder="Enter your name"
             value={data.name}
             onChange={(e) => setData({ ...data, name: e.target.value })}
+            // onChange: Jab user input karega, setData function call hoga,
+            //  jo input field ke value ko data object mein update kardega.
+
+            // ...data : baaki fields (email, password) ko unchanged rakega,
+            //  aur sirf jis field ko update krna hai, uski value change krega.
           />
         </div>
         <div className="mb-4">
