@@ -7,7 +7,7 @@ function Navbar({ user, setUser }) {
 
   function handleLogout() {
     setUser(null);
-    navigate("/signup");
+    navigate("/login");
   }
 
   return (
