@@ -1,0 +1,84 @@
+.container {
+    max-width: 600px; /* Limit container width */
+    margin: auto; /* Center align */
+  }
+  
+  .form-control {
+    border-radius: 0.5rem; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth transition */
+  }
+  
+  .form-control:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+  }
+  
+  .btn {
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  }
+  
+  .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+  }
+
+  
+  /* read data */
+
+  .container {
+    max-width: 800px; /* Limit container width */
+    margin: auto; /* Center align */
+    padding: 20px; /* Add padding */
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Increase font size for header */
+  }
+  
+  .list-group-item {
+    border-radius: 0.5rem; /* Rounded corners for list items */
+    transition: background-color 0.3s; /* Smooth background color transition */
+  }
+  
+  .list-group-item:hover {
+    background-color: #f1f1f1; /* Change background color on hover */
+  }
+  
+  .btn {
+    transition: transform 0.3s; /* Smooth transition for buttons */
+  }
+  
+  .btn:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+  }
+
+  /* edit data */
+
+  .container {
+    max-width: 600px; /* Limit container width */
+    margin: auto; /* Center align */
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Increase font size for header */
+  }
+  
+  .form-control {
+    border-radius: 0.5rem; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth transition */
+  }
+  
+  .form-control:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+  }
+  
+  .btn {
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  }
+  
+  .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+  }
+  
