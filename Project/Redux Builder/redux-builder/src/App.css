@@ -1,0 +1,40 @@
+.todo-app-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .todo-wrapper {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  
+  .task-input {
+    border-radius: 30px;
+    padding: 12px 20px;
+    border: 1px solid #ced4da;
+  }
+  
+  .btn-info, .btn-warning {
+    border-radius: 30px;
+  }
+  
+  .task-card {
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .task-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-text {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .btn-outline-success, .btn-outline-danger {
+    border-radius: 20px;
+  }
+  
